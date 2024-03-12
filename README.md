@@ -32,5 +32,8 @@ Upload a PDF file containing a resume using the file upload widget.
 
 - **User Queries:** Enter specific questions about the resume, and click the "Get Answer" button to receive responses.
 
+## Resume QABot App
+[Application](https://cv-qna-lyzrbot-whtqgrrkamsp5xhnpyxnv2.streamlit.app/)
+
 ## About Lyzr
 Lyzr is the simplest agent framework to help customers build and launch Generative AI apps faster. It is a low-code agent framework that follows an **‘agentic’** way to build LLM apps, contrary to Langchain’s ‘functions and chains’ way and DSPy’s ‘programmatic’ way of building LLM apps. For more information, visit [Lyzr website](https://www.lyzr.ai/) .
