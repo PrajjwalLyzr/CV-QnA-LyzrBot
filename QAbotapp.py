@@ -104,12 +104,33 @@ def rag_implementation():
     return rag
 
 
+# def resume_response():
+#     rag = rag_implementation()
+#     prompt = """ Give the descrition of the give resume in 3 bullet points,
+#                 - First point will show the personal information such as name and contact.
+#                 - Second point will show the technical skills present in the resume.
+#                 - Third point will show the area of interests."""
+    
+#     response = rag.query(prompt)
+#     return response.response
+
+# if uploaded_file is not None:
+#     automatice_response = resume_response()
+#     st.markdown(f"""{automatice_response}""")
+
+
+# question = st.text_input("Ask a question about the resume:")
+# prompt = "Make this very concise and simple:" + question
+# if st.button("Get Answer"):
+#     rag = rag_implementation()
+#     response = rag.query(prompt)
+#     st.markdown(f"""{response.response}""")
+
+
+
 def resume_response():
     rag = rag_implementation()
-    prompt = """ Give the descrition of the give resume in 3 bullet points,
-                - First point will show the personal information such as name and contact.
-                - Second point will show the technical skills present in the resume.
-                - Third point will show the area of interests."""
+    prompt = """ Give the descrition of the given resume in 3 bullet points"""
     
     response = rag.query(prompt)
     return response.response
@@ -120,10 +141,10 @@ if uploaded_file is not None:
 
 
 question = st.text_input("Ask a question about the resume:")
-prompt = "Make this very concise and simple:" + question
+
 if st.button("Get Answer"):
     rag = rag_implementation()
-    response = rag.query(prompt)
+    response = rag.query(question)
     st.markdown(f"""{response.response}""")
 
 
