@@ -22,12 +22,12 @@ st.markdown("Upload your Resume and Ask your queries.")
 
 
 # Input for API key
-api_key = st.sidebar.text_input("API Key", type="password")
-if api_key:
-    os.environ["OPENAI_API_KEY"] = api_key
-else:
-    # Prompt for API key if not provided
-    st.sidebar.warning("Please enter your API key to proceed.")
+# api_key = st.sidebar.text_input("API Key", type="password")
+# if api_key:
+#     os.environ["OPENAI_API_KEY"] = api_key
+# else:
+#     # Prompt for API key if not provided
+#     st.sidebar.warning("Please enter your API key to proceed.")
 
 
 vector_store_params = {
