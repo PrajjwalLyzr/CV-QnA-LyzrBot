@@ -58,7 +58,7 @@ os.makedirs(data_directory, exist_ok=True)
 remove_existing_files(data_directory)
 
 # Streamlit app header
-st.title("PDF File Uploader")
+# st.title("PDF File Uploader")
 
 # File upload widget
 uploaded_file = st.file_uploader("Choose PDF file", type=["pdf"])
