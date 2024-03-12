@@ -126,16 +126,6 @@ if st.button("Get Answer"):
     response = rag.query(prompt)
     st.markdown(f"""{response.response}""")
 
-# st.session_state.pdf_file_paths = 'pdf_file_path'
-# if "pdf_file_paths" in st.session_state:
-#     rag = rag_implementation()
-#     question = st.text_input("Ask a question about the resume:")
-    
-#     if st.button("Get Answer"):
-#         response = rag.query(question)
-#         st.markdown(f"""#### {response.response}""")
-   
-
 
 # Footer or any additional information
 with st.expander("ℹ️ - About this App"):
