@@ -140,12 +140,12 @@ if uploaded_file is not None:
     st.markdown(f"""{automatice_response}""")
 
 
-question = st.text_input("Ask a question about the resume:")
-
-if st.button("Get Answer"):
-    rag = rag_implementation()
-    response = rag.query(question)
-    st.markdown(f"""{response.response}""")
+    question = st.text_input("Ask a question about the resume:")
+    
+    if st.button("Get Answer"):
+        rag = rag_implementation()
+        response = rag.query(question)
+        st.markdown(f"""{response.response}""")
 
 
 # Footer or any additional information
