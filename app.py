@@ -127,7 +127,7 @@ if uploaded_file is not None:
 with st.expander("ℹ️ - About this App"):
     st.markdown(
         """
-    This app uses Lyzr Core to generate notes from transcribed audio. The audio transcription is powered by OpenAI's Whisper model. For any inquiries or issues, please contact Lyzr.
+    This app uses Lyzr QABot agent to implement the RAG functionality, where users can upload their resumes and ask questions. For any inquiries or issues, please contact Lyzr.
 
     """
     )
