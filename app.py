@@ -22,18 +22,13 @@ st.markdown("Upload your Resume and Ask your queries.")
 
 
 # Input for API key
-# api_key = st.sidebar.text_input("API Key", type="password")
-# if api_key:
-#     os.environ["OPENAI_API_KEY"] = api_key
-# else:
-#     # Prompt for API key if not provided
-#     st.sidebar.warning("Please enter your API key to proceed.")
+api_key = st.sidebar.text_input("API Key", type="password")
+if api_key:
+    os.environ["OPENAI_API_KEY"] = api_key
+else:
+    # Prompt for API key if not provided
+    st.sidebar.warning("Please enter your API key to proceed.")
 
-
-# vector_store_params = {
-#     "vector_store_type": "WeaviateVectorStore",
-#     "index_name": "IndexName" # first letter should be capital
-# }
 
 
 def remove_existing_files(directory):
@@ -94,9 +89,7 @@ def rag_implementation():
     path = path[0]
 
     rag = QABot.pdf_qa(
-        input_files=[str(path)],
-        llm_params={"model": "gpt-3.5-turbo"},
-        # vector_store_params=vector_store_params
+        input_files=[str(path)]
     )
 
     return rag
